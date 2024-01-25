@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js" ></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-camera position="0 0 0" ></a-camera>
+            <a-assets>
+                <a-asset-item id="train-obj" src="./train/tinker.obj"></a-asset-item>
+                <a-asset-item id="train-mtl" src="./train/obj.mtl"></a-asset-item>
+                <a-asset-item id="train.gltf" src="./train.glb"></a-asset-item>
+            </a-assets>
+            <a-entity obj-model="obj:#train-obj; mtl:#train-mtl" position="0 -1 -2" scale="0.01 0.01 0.01" rotation="-90 0 0" ></a-entity>
+            <a-entity>
+                <a-box color="#a27c00" position="0 -1.05 -2" scale="4 0.1 1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGSpubOcejc6rkD1fepnwsJYl-Dtu3Q64KmpIKqWBe1iXP8rVf_F-D7swkSlCqsPwLaU&usqp=CAU" ></a-box>
+                <a-box color="gray" position="0 -0.3 -2.5" scale="4 0.1 1.6" rotation="90 0 0" src="https://m.media-amazon.com/images/M/MV5BMDYzNzUyMzYtZmUxNS00MGVhLWExY2YtNmI0MTUxYjI2MDRjXkEyXkFqcGdeQXVyODkyNDc0NDI@._V1_.jpg" ></a-box>
+
+            </a-entity>
+
+        </a-scene>
+    </body>
+</html>
